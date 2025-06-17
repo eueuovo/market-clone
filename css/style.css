@@ -11,7 +11,7 @@ body {
 }
 
 .media-info-msg {
-  position: absolute;
+  position: fixed; /* 스크롤 따라오게끔 */
   top: 0;
   left: 0;
   width: 100vw;
@@ -25,6 +25,7 @@ body {
 
 @media screen and (max-width: 550px) {
   .media-info-msg {
-    opacity: 0;
+    display: none;
+    /* opacity: 0; -> 배경화면을 투명으로 만드는거라 배경 아래에 있는 요소 클릭 안됨*/
   }
 }
