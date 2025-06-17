@@ -56,9 +56,14 @@ main {
   bottom: 115px;
   right: 15px;
   font-size: 110%;
-  border: 1px solid #fc7010;
   border-radius: 25px;
-  background-color: #fc7010;
+  background-color: var(--button-primary);
   color: white;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.write-btn:hover {
+  background-color: var(--button-hover);
 }
